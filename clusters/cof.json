@@ -1,0 +1,70 @@
+{
+    "variable": "v2_web_coach_post_subscription_landing_page",
+    "value": {
+        "enterChat": {
+            "elementId": "enterChat",
+            "cardType": "info_card",
+            "subtitle": {
+                "subscribed": "Message your coach",
+                "unsubscribed": "See past conversations",
+                "firstest": "You have unread messages"
+            },
+            "title": "Coach chat",
+            "action": "open_coach_chat",
+            "tags": [
+                "{unread_count}"
+            ],
+            "icon_url": {
+                "light": "https://cdn.wysa.io/assets/unlocked_coach_image.svg",
+                "dark": "https://cdn.wysa.io/assets/unlocked_coach_image.svg"
+            },
+            "buttons": [
+                {
+                    "title": "Start Chat",
+                    "action": "open_coach_chat",
+                    "path": "/coach/chat",
+                    "elementId": "enterChatButton",
+                    "backgroundType": "outline"
+                }
+            ],
+            "styles": {
+                "light": {
+                    "background": {
+                        "type": "transparent"
+                    }
+                }
+            }
+        },
+        "therapy_shield": {
+            "elementId": "coachFeedBubbles",
+            "cardType": "progress_cards",
+            "cards": [
+                {
+                    "image_url": {
+                        "light": "https://bot-content.s3-ap-southeast-1.amazonaws.com/coach/feed/day/todo_bubble_2.png",
+                        "dark": "https://bot-content.s3-ap-southeast-1.amazonaws.com/coach/feed/dark/todo_bubble_2.png"
+                    },
+                    "action": "open_todos",
+                    "uri": "wysabuddy://coach_todos",
+                    "title": "To-Dos",
+                    "elementId": "todos",
+                    "disabled": false,
+                    "errorText": "You have no to-dos right now. Your therapist will keep adding them here as they learn more about you."
+                },
+                {
+                    "image_url": {
+                        "light": "https://bot-content.s3-ap-southeast-1.amazonaws.com/coach/feed/day/exercise_bubble_2.png",
+                        "dark": "https://bot-content.s3-ap-southeast-1.amazonaws.com/coach/feed/dark/exercise_bubble_2.png"
+                    },
+                    "title": "Exercises",
+                    "action": "open_toolpack",
+                    "toolpack_id": "coach_recommended",
+                    "uri": "wysabuddy://tools?toolpack_id=coach_recommended",
+                    "elementId": "coachtools",
+                    "disabled": false,
+                    "errorText": "Exercises recommended by your therapist will show here"
+                }
+            ]
+        }
+    }
+}

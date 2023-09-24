@@ -1,0 +1,197 @@
+Statistical profiling result from isolate-0x120040000-81864-v8.log, (80331 ticks, 330 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+   4649    5.8%          /usr/lib/system/libsystem_malloc.dylib
+     12    0.0%          /usr/lib/system/libsystem_pthread.dylib
+     12    0.0%          /usr/lib/system/libsystem_kernel.dylib
+      8    0.0%          /usr/lib/system/libsystem_c.dylib
+      6    0.0%          /usr/lib/libc++.1.dylib
+      2    0.0%          /usr/lib/system/libsystem_platform.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+      3    0.0%    0.0%  LazyCompile: *nextTick node:internal/process/task_queues:103:18
+      3    0.0%    0.0%  LazyCompile: *next /Users/santhosh/learn/cdn/node_modules/express/lib/router/index.js:177:16
+      2    0.0%    0.0%  RegExp: ;\s*charset\s*=
+      2    0.0%    0.0%  RegExp: (\[[^[\]]*])
+      2    0.0%    0.0%  LazyCompile: *fastparse /Users/santhosh/learn/cdn/node_modules/parseurl/index.js:95:20
+      2    0.0%    0.0%  LazyCompile: *_storeHeader node:_http_outgoing:420:22
+      2    0.0%    0.0%  LazyCompile: *Readable.read node:internal/streams/readable:402:35
+      2    0.0%    0.0%  Function: ^parse /Users/santhosh/learn/cdn/node_modules/content-type/index.js:106:16
+      2    0.0%    0.0%  Function: ^header /Users/santhosh/learn/cdn/node_modules/express/lib/response.js:777:29
+      2    0.0%    0.0%  Function: ^format /Users/santhosh/learn/cdn/node_modules/content-type/index.js:65:17
+      2    0.0%    0.0%  Function: ^Readable.on node:internal/streams/readable:886:33
+      1    0.0%    0.0%  RegExp: ^text\/|^application\/(javascript|json)
+      1    0.0%    0.0%  RegExp: ^\/auth\/?$
+      1    0.0%    0.0%  RegExp: ^[!#$%&'*+.^_`|~0-9A-Za-z-]+\/[!#$%&'*+.^_`|~0-9A-Za-z-]+$
+      1    0.0%    0.0%  RegExp: [!@#$%^&*]
+      1    0.0%    0.0%  LazyCompile: *writevGeneric node:internal/stream_base_commons:122:23
+      1    0.0%    0.0%  LazyCompile: *writeOrBuffer node:internal/streams/writable:368:23
+      1    0.0%    0.0%  LazyCompile: *send /Users/santhosh/learn/cdn/node_modules/express/lib/response.js:111:25
+      1    0.0%    0.0%  LazyCompile: *resOnFinish node:_http_server:910:21
+      1    0.0%    0.0%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:67:35
+      1    0.0%    0.0%  LazyCompile: *pbkdf2Sync node:internal/crypto/pbkdf2:69:20
+      1    0.0%    0.0%  LazyCompile: *parserOnIncoming node:_http_server:968:26
+      1    0.0%    0.0%  LazyCompile: *parseQueryStringValues /Users/santhosh/learn/cdn/node_modules/qs/lib/parse.js:51:50
+      1    0.0%    0.0%  LazyCompile: *parseQueryStringKeys /Users/santhosh/learn/cdn/node_modules/qs/lib/parse.js:150:46
+      1    0.0%    0.0%  LazyCompile: *module.exports /Users/santhosh/learn/cdn/node_modules/qs/lib/parse.js:239:27
+      1    0.0%    0.0%  LazyCompile: *matchKnownFields node:_http_incoming:279:26
+      1    0.0%    0.0%  LazyCompile: *hasHooks node:internal/async_hooks:470:18
+      1    0.0%    0.0%  LazyCompile: *handle /Users/santhosh/learn/cdn/node_modules/express/lib/router/index.js:136:31
+      1    0.0%    0.0%  LazyCompile: *format /Users/santhosh/learn/cdn/node_modules/content-type/index.js:65:17
+      1    0.0%    0.0%  LazyCompile: *endReadableNT node:internal/streams/readable:1352:23
+      1    0.0%    0.0%  LazyCompile: *emit node:events:460:44
+      1    0.0%    0.0%  Function: ^writevGeneric node:internal/stream_base_commons:122:23
+      1    0.0%    0.0%  Function: ^validateString node:internal/validators:161:24
+      1    0.0%    0.0%  Function: ^validateNumber node:internal/validators:176:24
+      1    0.0%    0.0%  Function: ^trim_prefix /Users/santhosh/learn/cdn/node_modules/express/lib/router/index.js:293:23
+      1    0.0%    0.0%  Function: ^sendStatus /Users/santhosh/learn/cdn/node_modules/express/lib/response.js:369:37
+      1    0.0%    0.0%  Function: ^resume node:internal/streams/readable:989:16
+      1    0.0%    0.0%  Function: ^res.get /Users/santhosh/learn/cdn/node_modules/express/lib/response.js:811:19
+      1    0.0%    0.0%  Function: ^removeListener node:events:675:28
+      1    0.0%    0.0%  Function: ^removeAllListeners node:events:735:32
+      1    0.0%    0.0%  Function: ^readPackage node:internal/modules/cjs/loader:326:21
+      1    0.0%    0.0%  Function: ^pushAsyncContext node:internal/async_hooks:539:26
+      1    0.0%    0.0%  Function: ^processTicksAndRejections node:internal/process/task_queues:67:35
+      1    0.0%    0.0%  Function: ^popAsyncContext node:internal/async_hooks:553:25
+      1    0.0%    0.0%  Function: ^pbkdf2Sync node:internal/crypto/pbkdf2:69:20
+      1    0.0%    0.0%  Function: ^parserOnHeadersComplete node:_http_common:72:33
+      1    0.0%    0.0%  Function: ^parseQueryStringKeys /Users/santhosh/learn/cdn/node_modules/qs/lib/parse.js:150:46
+      1    0.0%    0.0%  Function: ^normalizeEncoding node:internal/util:163:27
+      1    0.0%    0.0%  Function: ^next /Users/santhosh/learn/cdn/node_modules/express/lib/router/route.js:116:16
+      1    0.0%    0.0%  Function: ^get node:internal/bootstrap/node:95:8
+      1    0.0%    0.0%  Function: ^get hasSubscribers node:diagnostics_channel:88:21
+      1    0.0%    0.0%  Function: ^generateETag /Users/santhosh/learn/cdn/node_modules/express/lib/utils.js:273:32
+      1    0.0%    0.0%  Function: ^fresh /Users/santhosh/learn/cdn/node_modules/fresh/index.js:33:16
+      1    0.0%    0.0%  Function: ^finishMaybe node:internal/streams/writable:718:21
+      1    0.0%    0.0%  Function: ^etag /Users/santhosh/learn/cdn/node_modules/etag/index.js:70:15
+      1    0.0%    0.0%  Function: ^createHash node:crypto:132:20
+      1    0.0%    0.0%  Function: ^contentType /Users/santhosh/learn/cdn/node_modules/express/lib/response.js:619:32
+      1    0.0%    0.0%  Function: ^clearBuffer node:internal/streams/writable:532:21
+      1    0.0%    0.0%  Function: ^checkListener node:events:265:23
+      1    0.0%    0.0%  Function: ^callback node:internal/streams/writable:553:44
+      1    0.0%    0.0%  Function: ^afterWriteTick node:internal/streams/writable:485:24
+      1    0.0%    0.0%  Function: ^afterWrite node:internal/streams/writable:490:20
+      1    0.0%    0.0%  Function: ^addListener node:events:604:58
+      1    0.0%    0.0%  Function: ^_writeRaw node:_http_outgoing:371:19
+      1    0.0%    0.0%  Function: ^_write node:internal/streams/writable:286:16
+      1    0.0%    0.0%  Function: ^_unrefTimer node:net:477:52
+      1    0.0%    0.0%  Function: ^_send node:_http_outgoing:336:49
+      1    0.0%    0.0%  Function: ^_flushOutput node:_http_outgoing:1075:63
+      1    0.0%    0.0%  Function: ^_addListener node:events:541:22
+      1    0.0%    0.0%  Function: ^Writable.write node:internal/streams/writable:336:36
+      1    0.0%    0.0%  Function: ^Writable.uncork node:internal/streams/writable:344:37
+      1    0.0%    0.0%  Function: ^Writable node:internal/streams/writable:220:18
+      1    0.0%    0.0%  Function: ^Socket._writeGeneric node:net:891:42
+      1    0.0%    0.0%  Function: ^Readable.read node:internal/streams/readable:402:35
+      1    0.0%    0.0%  Function: ^Readable.push node:internal/streams/readable:233:35
+      1    0.0%    0.0%  Function: ^Mime.lookup /Users/santhosh/learn/cdn/node_modules/mime/mime.js:69:33
+      1    0.0%    0.0%  Function: ^Hash node:internal/crypto/hash:62:14
+      1    0.0%    0.0%  Function: ^<anonymous> /Users/santhosh/learn/cdn/node_modules/express/lib/request.js:467:36
+
+ [C++]:
+   ticks  total  nonlib   name
+  74225   92.4%   98.1%  T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+    577    0.7%    0.8%  t __os_once_gate_broadcast
+    114    0.1%    0.2%  T _posix_spawnattr_setmacpolicyinfo_np
+     70    0.1%    0.1%  t __os_once_gate_wait
+     40    0.0%    0.1%  T _OSAtomicDecrement32
+     37    0.0%    0.0%  t ___pfz_setup
+     34    0.0%    0.0%  T node::builtins::BuiltinLoader::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     27    0.0%    0.0%  T _semaphore_destroy
+     24    0.0%    0.0%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     19    0.0%    0.0%  T ___libplatform_init
+      7    0.0%    0.0%  T _mach_port_type
+      6    0.0%    0.0%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      6    0.0%    0.0%  T _mach_vm_map
+      5    0.0%    0.0%  T _OSAtomicIncrement32
+      4    0.0%    0.0%  T _mach_get_times
+      3    0.0%    0.0%  t void node::Buffer::(anonymous namespace)::StringWrite<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+      3    0.0%    0.0%  T _vm_region_64
+      3    0.0%    0.0%  T __simple_getenv
+      2    0.0%    0.0%  T _mach_port_allocate
+      1    0.0%    0.0%  t void std::__1::__tree_balance_after_insert<std::__1::__tree_node_base<void*>*>(std::__1::__tree_node_base<void*>*, std::__1::__tree_node_base<void*>*)
+      1    0.0%    0.0%  t std::__1::vector<unsigned long, std::__1::allocator<unsigned long> >::__append(unsigned long)
+      1    0.0%    0.0%  t std::__1::__hash_table<unsigned long, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long>, std::__1::allocator<unsigned long> >::remove(std::__1::__hash_const_iterator<std::__1::__hash_node<unsigned long, void*>*>)
+      1    0.0%    0.0%  t node::Buffer::(anonymous namespace)::ByteLengthUtf8(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t _mach_msg_destroy_port
+      1    0.0%    0.0%  T node::loader::ModuleWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::HandleWrap::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::AsyncWrap::EmitTraceEventBefore()
+      1    0.0%    0.0%  T node::AsyncWrap::EmitAfter(node::Environment*, double)
+      1    0.0%    0.0%  T _semaphore_create
+      1    0.0%    0.0%  T _mig_dealloc_reply_port
+      1    0.0%    0.0%  T _flsll
+
+ [Summary]:
+   ticks  total  nonlib   name
+     91    0.1%    0.1%  JavaScript
+  75221   93.6%   99.4%  C++
+     47    0.1%    0.1%  GC
+   4689    5.8%          Shared libraries
+    330    0.4%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+  74159   98.9%   92.3%  T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+    577    0.8%    0.7%  t __os_once_gate_broadcast
+     70    0.1%    0.1%  t __os_once_gate_wait
+     40    0.1%    0.0%  T _OSAtomicDecrement32
+     35    0.0%    0.0%  t ___pfz_setup
+     34    0.0%    0.0%  T node::builtins::BuiltinLoader::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     24    0.0%    0.0%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     20    0.0%    0.0%  T _semaphore_destroy
+     19    0.0%    0.0%  T ___libplatform_init
+      6    0.0%    0.0%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      5    0.0%    0.0%  T _OSAtomicIncrement32
+      3    0.0%    0.0%  t void node::Buffer::(anonymous namespace)::StringWrite<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+      2    0.0%    0.0%  T __simple_getenv
+      1    0.0%    0.0%  t node::Buffer::(anonymous namespace)::ByteLengthUtf8(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::loader::ModuleWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::HandleWrap::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T _mig_dealloc_reply_port
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+  74225   92.4%  T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+  59546   80.2%    Function: ^pbkdf2Sync node:internal/crypto/pbkdf2:69:20
+  59502   99.9%      Function: ^<anonymous> /Users/santhosh/learn/cdn/app.js:24:18
+  59502  100.0%        Function: ^handle /Users/santhosh/learn/cdn/node_modules/express/lib/router/layer.js:86:49
+  59368   99.8%          Function: ^next /Users/santhosh/learn/cdn/node_modules/express/lib/router/route.js:116:16
+  59368  100.0%            Function: ^dispatch /Users/santhosh/learn/cdn/node_modules/express/lib/router/route.js:98:45
+  11029   14.9%    LazyCompile: *pbkdf2Sync node:internal/crypto/pbkdf2:69:20
+  11029  100.0%      Function: ^<anonymous> /Users/santhosh/learn/cdn/app.js:24:18
+   6526   59.2%        Function: ^handle /Users/santhosh/learn/cdn/node_modules/express/lib/router/layer.js:86:49
+   6526  100.0%          Function: ^next /Users/santhosh/learn/cdn/node_modules/express/lib/router/route.js:116:16
+   6526  100.0%            Function: ^dispatch /Users/santhosh/learn/cdn/node_modules/express/lib/router/route.js:98:45
+   4503   40.8%        LazyCompile: *handle /Users/santhosh/learn/cdn/node_modules/express/lib/router/layer.js:86:49
+   4503  100.0%          Function: ^next /Users/santhosh/learn/cdn/node_modules/express/lib/router/route.js:116:16
+   4503  100.0%            Function: ^dispatch /Users/santhosh/learn/cdn/node_modules/express/lib/router/route.js:98:45
+   2840    3.8%    LazyCompile: *<anonymous> /Users/santhosh/learn/cdn/app.js:24:18
+   2840  100.0%      Function: ^handle /Users/santhosh/learn/cdn/node_modules/express/lib/router/layer.js:86:49
+   2840  100.0%        Function: ^next /Users/santhosh/learn/cdn/node_modules/express/lib/router/route.js:116:16
+   2840  100.0%          Function: ^dispatch /Users/santhosh/learn/cdn/node_modules/express/lib/router/route.js:98:45
+   2840  100.0%            LazyCompile: *next /Users/santhosh/learn/cdn/node_modules/express/lib/router/index.js:177:16
+
+   4649    5.8%  /usr/lib/system/libsystem_malloc.dylib
+   3608   77.6%    LazyCompile: *pbkdf2Sync node:internal/crypto/pbkdf2:69:20
+   3608  100.0%      Function: ^<anonymous> /Users/santhosh/learn/cdn/app.js:24:18
+   2165   60.0%        Function: ^handle /Users/santhosh/learn/cdn/node_modules/express/lib/router/layer.js:86:49
+   2165  100.0%          Function: ^next /Users/santhosh/learn/cdn/node_modules/express/lib/router/route.js:116:16
+   2165  100.0%            Function: ^dispatch /Users/santhosh/learn/cdn/node_modules/express/lib/router/route.js:98:45
+   1443   40.0%        LazyCompile: *handle /Users/santhosh/learn/cdn/node_modules/express/lib/router/layer.js:86:49
+   1443  100.0%          Function: ^next /Users/santhosh/learn/cdn/node_modules/express/lib/router/route.js:116:16
+   1443  100.0%            Function: ^dispatch /Users/santhosh/learn/cdn/node_modules/express/lib/router/route.js:98:45
+   1031   22.2%    LazyCompile: *<anonymous> /Users/santhosh/learn/cdn/app.js:24:18
+   1031  100.0%      Function: ^handle /Users/santhosh/learn/cdn/node_modules/express/lib/router/layer.js:86:49
+   1031  100.0%        Function: ^next /Users/santhosh/learn/cdn/node_modules/express/lib/router/route.js:116:16
+   1031  100.0%          Function: ^dispatch /Users/santhosh/learn/cdn/node_modules/express/lib/router/route.js:98:45
+   1031  100.0%            LazyCompile: *next /Users/santhosh/learn/cdn/node_modules/express/lib/router/index.js:177:16
+
